@@ -1,0 +1,13 @@
+.home {
+    background: url(assets/background_home.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    #logo_home {
+        margin: auto;
+        display: block;
+        width: 250px;
+    }
+}

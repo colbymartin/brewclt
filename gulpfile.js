@@ -6,7 +6,7 @@ let OUTPUT_DIRECTORY = 'public';
 
 // html, css, and js tasks
 
-gulp.task('default', ['html', 'css', 'js', 'templates']);
+gulp.task('default', ['html', 'css', 'js', 'templates', 'assets']);
 
 gulp.task('html', function () {
     return gulp.src('index.html')
@@ -31,6 +31,10 @@ gulp.task('js', function () {
         .pipe(gulp.dest(OUTPUT_DIRECTORY));
 });
 
+gulp.task('assets', function () {
+    return gulp.src('assets/**')
+        .pipe(gulp.dest(OUTPUT_DIRECTORY + '/assets'));
+});
 
 
 gulp.task('watch', ['default'], function () {
@@ -39,4 +43,5 @@ gulp.task('watch', ['default'], function () {
     gulp.watch('js/*.js', ['js']);
     gulp.watch('js/*/*.js', ['js']);
     gulp.watch('templates/*.html', ['templates']);
+    gulp.watch('assets/**', ['assets']);
 });
