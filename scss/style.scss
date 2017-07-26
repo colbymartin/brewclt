@@ -1,5 +1,13 @@
 @import '../node_modules/foundation-sites/scss/foundation';
-
 @include foundation-global-styles;
 @include foundation-grid; 
 
+@import "home";
+
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}

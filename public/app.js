@@ -85,6 +85,11 @@ app.component('social', {
     templateUrl: 'templates/social.html',
     controller: 'MainController',
 });
+
+app.component('social', {
+    templateUrl: 'templates/social.html',
+    controller: 'MainController',
+});
 },{"./controllers/main":2,"./services/breweries":3}],2:[function(require,module,exports){
 module.exports = {
     name: 'MainController',
